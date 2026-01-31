@@ -1,47 +1,147 @@
 # 🛡️ Fraud Intelligence Command Center
 
-An end-to-end **fraud risk intelligence platform** that tracks evolving fraud patterns,
-detects risk escalation, and provides explainable insights for analysts and decision-makers.
+A practical, end-to-end fraud analytics system that models how real-world
+fraud and risk teams monitor evolving patterns, assess transaction risk,
+and make informed decisions using explainable signals.
 
-This project simulates how modern fintech and banking fraud teams monitor,
-investigate, and respond to emerging threats.
-
----
-
-## 🚀 Live Demo
-🔗 https://<your-streamlit-app-url>
+🔗 **Live Demo**  
+https://fraud-intelligence-patterngit-rdejt5xfhu8xh2zkmuaqpg.streamlit.app/
 
 ---
 
-## 🧠 Key Capabilities
+## 📌 Why This Project Exists
 
-### 🔍 Risk Intelligence
-- Composite risk scoring using behavioral, statistical, and pattern-based signals
-- Explainable risk breakdown for each transaction
-- High-risk user and transaction identification
+Most fraud projects stop at building a classifier.
 
-### 📈 Temporal Analysis
-- Risk trend tracking over time
-- Risk evolution bands (10–90 percentile)
-- Risk acceleration detection
-- Fraud rate monitoring
+In real industry settings, teams care more about:
+- How risk is changing over time
+- Which patterns are becoming dominant
+- Why a transaction is risky
+- Which users or strategies need attention first
 
-### 🧩 Pattern Discovery
-- Fraud pattern clustering
-- Pattern risk profiling
-- Detection of emerging and dominant fraud strategies
+This project was built to reflect that reality.
 
-### 🚨 Alerts & Monitoring
-- Real-time alerts for elevated risk
-- KPI-based soft alerts
-- Designed for extension into drift-based and acceleration alerts
-
-### 👤 Analyst Workflows
-- User-level risk concentration analysis
-- Transaction-level investigation table
-- Configurable thresholds and filters
+Instead of treating fraud detection as a single prediction task,
+it models fraud as a **dynamic, evolving system** and presents it
+through an analyst-friendly intelligence dashboard.
 
 ---
 
-## 🏗️ System Architecture
+## 🧠 What the System Does
+
+### 1. Risk Scoring
+Each transaction is assigned a composite risk score using:
+- Statistical deviation (amount anomalies)
+- Behavioral changes (device switching, frequency)
+- Temporal momentum (risk acceleration)
+- Pattern-level risk (cluster behavior)
+
+All scores are clipped and normalized for interpretability.
+
+---
+
+### 2. Explainable Risk
+Every transaction includes a human-readable explanation such as:
+- Escalating risk pattern
+- Unusual transaction amount
+- Frequent device changes
+- High-risk behavioral cluster
+
+This ensures decisions are transparent and auditable.
+
+---
+
+### 3. Pattern & Trend Intelligence
+The system continuously tracks:
+- Risk trends over time
+- Risk distribution shifts
+- Risk acceleration
+- Fraud share evolution
+- Dominant fraud patterns (clusters)
+
+These insights help identify *emerging threats*, not just known ones.
+
+---
+
+### 4. Analyst Dashboard
+An interactive Streamlit dashboard allows users to:
+- Filter by time window, users, clusters, and thresholds
+- Monitor KPIs and alerts
+- Explore risk evolution visually
+- Investigate high-risk users and transactions
+- Understand *why* risk is increasing
+
+All charts update live based on user inputs.
+
+---
+
+## 📊 Key Dashboard Features
+
+- Live risk KPIs (mean, median, volatility, percentiles)
+- Risk trend with evolution bands (10–90%)
+- Risk acceleration tracking
+- Fraud rate over time
+- User risk concentration analysis
+- Fraud pattern risk profiling
+- High-risk transaction investigation table
+  
+## 🏗️ Architecture Overview
+---
+Synthetic / Processed Data
+↓
+Feature Engineering
+↓
+Pattern Discovery (Clustering)
+↓
+Composite Risk Engine
+↓
+Explainability Layer
+↓
+Live Intelligence Dashboard
+---
+
+## ⚙️ Tech Stack
+
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Matplotlib, Seaborn
+- Streamlit
+- YAML-based configuration
+
+---
+
+## 📁 Project Structure
+
+project/
+├── app/ # Streamlit dashboard
+├── src/ # Risk, explainability & pattern logic
+├── data/ # Processed datasets
+├── notebooks/ # Experiments and analysis
+├── requirements.txt
+└── README.md
+
+
+---
+
+## 🎯 What This Project Demonstrates
+
+- Understanding of fraud as a **system**, not just a model
+- Strong emphasis on explainability and usability
+- Ability to design analyst-facing tools
+- End-to-end ownership: data → logic → UI → deployment
+
+---
+
+## ⚠️ Disclaimer
+
+This project uses synthetic and simulated data for learning
+and portfolio purposes only. It does not represent real users
+or real financial transactions.
+
+---
+
+
+
+## 🏗️ Architecture Overview
 
