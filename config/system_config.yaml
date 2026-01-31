@@ -1,0 +1,9 @@
+risk_weights:
+  amount: 0.35
+  momentum: 0.25
+  device: 0.20
+  cluster: 0.20
+
+thresholds:
+  high_risk: 0.7
+  alert_acceleration: 0.05

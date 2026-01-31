@@ -1,0 +1,8 @@
+[theme]
+base = "dark"
+
+primaryColor = "#C69C6D"              # warm coffee accent (buttons, sliders)
+backgroundColor = "#1E1B18"           # dark espresso background
+secondaryBackgroundColor = "#2A2420"  # mocha cards / panels
+textColor = "#F3EEE9"                 # soft off-white text
+font = "sans serif"
